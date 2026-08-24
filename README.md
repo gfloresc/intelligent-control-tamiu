@@ -76,25 +76,29 @@ throughout.
 
 ```
 .
-├── slides/                 compiled lecture slides, one PDF per session
-│   ├── seng5360_s01.pdf
-│   ├── seng5360_s02.pdf
-│   └── seng5360_s03.pdf
-└── code/                   the numbered code snippets shown on the slides
-    ├── session-01/
-    ├── session-02/
-    └── session-03/
+├── slides/     compiled lecture slides, one PDF per session
+└── code/       one Colab notebook per session, with every snippet
+                shown on the slides of that session
 ```
 
 ---
 
-## Code snippets
+## Notebooks
 
-Every listing on a slide carries a code icon and a number, for example **Code 2.3**. The matching
-file lives in the folder of that session and repeats the number in its name, so `Code 2.3` is
-`code/session-02/code_2_3_phase_portrait.py`.
+Each session has one Colab notebook in `code/`, containing every code snippet shown on the slides of
+that session, in the order they appear. The listings on a slide carry a code icon and a number, for
+example **Code 2.3**; the notebook uses the same numbering, so you can go straight to the cell you
+need.
 
-Some snippets are deliberately incomplete: they are the starting point of a homework item, not a
+| Session | Notebook |
+|---|---|
+| 1 | [`session1_lab1.ipynb`](code/SENG5360_Session1_Lab1_Colab.ipynb) |
+| 2 | [`session2_linear_toolbox.ipynb`](code/SENG5360_Session2_Linear_Toolbox_Colab.ipynb) |
+
+The notebooks run in Google Colab with no setup. To run them locally you need `numpy`, `scipy` and
+`matplotlib`.
+
+Some cells are deliberately incomplete: they are the starting point of a homework item, not a
 finished solution.
 
 ### Running the code
